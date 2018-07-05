@@ -1,17 +1,20 @@
+import java.util.ArrayList;
+
 public class ArrayListStack implements MyStack {
-    private int count=0;
+    private ArrayList<Integer> elements= new ArrayList<>();
+
     public ArrayListStack(int size) {
 
     }
     @Override
     public void push(int element) {
-        count++;
+        elements.add(element);
 
     }
 
     @Override
     public int pop() {
-        return count--;
+        return elements.remove(0);
     }
 
     @Override
@@ -21,11 +24,11 @@ public class ArrayListStack implements MyStack {
 
     @Override
     public boolean isEmpty() {
-        return count == 0;
+        return elements.isEmpty();
     }
 
     @Override
     public int getSize() {
-        return count;
+        return elements.size();
     }
 }
