@@ -11,7 +11,7 @@ public class ArrayListStack implements MyStack {
 
     @Override
     public int pop() {
-        return 0;
+        return count--;
     }
 
     @Override
@@ -21,7 +21,7 @@ public class ArrayListStack implements MyStack {
 
     @Override
     public boolean isEmpty() {
-        return true;
+        return count == 0;
     }
 
     @Override
