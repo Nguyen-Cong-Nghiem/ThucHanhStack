@@ -1,3 +1,8 @@
+package stackofarraylist;
+
+import stackofarraylist.ArrayListStack;
+import stackofarraylist.MyStack;
+
 public class StackClient {
     public static void main(String[] args)  {
         MyStack stack = new ArrayListStack();
@@ -6,6 +11,9 @@ public class StackClient {
         stack.push(3);
         stack.push(26);
         stack.push(12);
+        stack.push(78);
+        stack.push(43);
+        stack.push(11);
 
         System.out.println("size sau nhap phan tu la: "+ stack.getSize());
         while (!stack.isEmpty()) {

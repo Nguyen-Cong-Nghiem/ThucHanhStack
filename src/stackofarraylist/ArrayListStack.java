@@ -1,11 +1,14 @@
+package stackofarraylist;
+
 import java.util.ArrayList;
 
 public class ArrayListStack implements MyStack {
-    private ArrayList<Integer> elements= new ArrayList<>();
+    private ArrayList<Integer> elements = new ArrayList<>();
 
-    public ArrayListStack() {
+    ArrayListStack() {
 
     }
+
     @Override
     public void push(int element) {
         elements.add(element);

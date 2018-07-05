@@ -1,3 +1,5 @@
+package stackofarraylist;
+
 public class ArrayStack implements MyStack {
     private int size;
     private int[]arr;

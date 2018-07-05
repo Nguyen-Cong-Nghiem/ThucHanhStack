@@ -1,3 +1,5 @@
+package stackofarraylist;
+
 public interface MyStack {
     void push(int element);
 
