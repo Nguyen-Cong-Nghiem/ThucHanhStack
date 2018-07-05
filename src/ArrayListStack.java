@@ -1,6 +1,11 @@
 public class ArrayListStack implements MyStack {
+    private int count=0;
+    public ArrayListStack(int size) {
+
+    }
     @Override
     public void push(int element) {
+        count++;
 
     }
 
@@ -16,11 +21,11 @@ public class ArrayListStack implements MyStack {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return true;
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return count;
     }
 }
