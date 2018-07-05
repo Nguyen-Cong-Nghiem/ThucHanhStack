@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class ArrayListStack implements MyStack {
     private ArrayList<Integer> elements= new ArrayList<>();
 
-    public ArrayListStack(int size) {
+    public ArrayListStack() {
 
     }
     @Override
@@ -14,7 +14,8 @@ public class ArrayListStack implements MyStack {
 
     @Override
     public int pop() {
-        return elements.remove(0);
+        int lastestIndex = getSize() - 1;
+        return elements.remove(lastestIndex);
     }
 
     @Override
