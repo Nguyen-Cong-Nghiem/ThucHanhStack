@@ -1,6 +1,6 @@
 public class StackClient {
     public static void main(String[] args)  {
-        MyStack stack = new MyStack(5);
+        MyStack stack = new ArrayStack(5);
         stack.push(5);
         stack.push(4);
         stack.push(3);

@@ -1,43 +1,11 @@
-public class MyStack {
-    private int size;
-    private int[]arr;
-    private int index=0;
+public interface MyStack {
+    void push(int element);
 
-    public MyStack(int size) {
-        this.size=size;
-        arr = new int[size];
-    }
+    int pop();
 
-    public void push(int element) {
-        if (isFull()) {
-            throw new StackOverflowError("dA DAY");
-        }
-        arr[index]=element;
-        index++;
-    }
+    boolean isFull();
 
-    public int pop() {
-        if (isEmpty()) {
-            throw new StackOverflowError("Thung rong");
-        }
-        return arr[--index];
-    }
+    boolean isEmpty();
 
-    public boolean isFull() {
-        if (index == size) {
-            return true;
-        }
-        return false;
-    }
-
-    public boolean isEmpty() {
-        if (index == 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public int getSize() {
-        return index;
-    }
+    int getSize();
 }
